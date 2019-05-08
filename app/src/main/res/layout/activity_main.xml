@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/busqueda"
+        android:layout_width="188dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Buscar" />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busqueda"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="11dp"
+        android:background="@color/cologreen"
+        android:layout_toEndOf="@+id/busqueda"
+        android:onClick="buscar"
+        android:text="buscar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/boton"
+        android:id="@+id/contactlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+
